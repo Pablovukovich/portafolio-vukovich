@@ -17,7 +17,7 @@ export const Proyectos = () => {
         funcionalidades y una misma visión.
       </div>
 
-      <section className="grid gap-5 md:grid-cols-2 lg:auto-rows-[21rem]">
+      <section className="grid gap-5 md:grid-cols-2 lg:auto-rows-[17rem]">
         {projects.map((project, index) => (
           <motion.div
             key={project.title}
@@ -30,7 +30,7 @@ export const Proyectos = () => {
               ease: "easeOut",
             }}
             whileHover={{ y: -6 }}
-            className={project.featured ? "md:col-span-2 lg:row-span-2" : ""}
+            className={project.featured ? "md:col-span-2" : ""}
           >
             <ProjectCard project={project} />
           </motion.div>
@@ -60,7 +60,7 @@ function ProjectCard({ project }: { project: Project }) {
     project.documentationUrl ?? `${projectHref}#documentacion`;
 
   return (
-    <Card className="relative h-full min-h-84 overflow-hidden rounded-3xl border-border/40 bg-[rgba(20,8,12,0.9)] p-0 text-[rgba(255,255,255,0.82)] shadow-[0_26px_52px_-22px_rgba(40,10,20,0.3)] transition-shadow duration-300 hover:shadow-[0_32px_70px_-24px_rgba(40,10,20,0.44)]">
+    <Card className="relative h-full min-h-72 overflow-hidden rounded-lg border-border/40 bg-[rgba(20,8,12,0.9)] p-0 text-[rgba(255,255,255,0.82)] shadow-[0_26px_52px_-22px_rgba(40,10,20,0.3)] transition-shadow duration-300 hover:shadow-[0_32px_70px_-24px_rgba(40,10,20,0.44)]">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-42 transition duration-500 group-hover/card:scale-105 group-hover/card:opacity-55"
         style={{ backgroundImage: `url(${project.image})` }}
@@ -68,12 +68,12 @@ function ProjectCard({ project }: { project: Project }) {
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(20,8,12,0.28)_0%,rgba(20,8,12,0.72)_50%,rgba(20,8,12,0.96)_100%)]" />
       <div className="pointer-events-none absolute inset-0 opacity-80 [background:radial-gradient(circle_at_50%_20%,rgba(240,166,188,0.24),transparent_62%)]" />
 
-      <div className="relative flex h-full flex-col justify-between gap-8 p-6 sm:p-8">
+      <div className="relative flex h-full flex-col justify-between gap-6 p-6 sm:p-7">
         <div>
           <p className="mb-3 text-xs font-extrabold tracking-[0.34em] text-[rgba(255,255,255,0.58)]">
             PROYECTO
           </p>
-          <h3 className="text-4xl font-black tracking-normal text-[rgba(240,166,188,0.94)] sm:text-5xl">
+          <h3 className="text-3xl font-black tracking-normal text-[rgba(240,166,188,0.94)] sm:text-4xl">
             {project.title}
           </h3>
           <p className="mt-4 max-w-2xl text-sm leading-6 text-[rgba(255,255,255,0.78)] sm:text-base">

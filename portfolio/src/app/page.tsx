@@ -42,7 +42,7 @@ export default function Home() {
       <SectionLabel
         section="contacto"
         label="CONTACTO"
-        className="mt-16"
+        className="mt-24"
       />
       <Contacto />
     </main>

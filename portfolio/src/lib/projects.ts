@@ -97,6 +97,42 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "panel-knews",
+    title: "PANEL KNEWS",
+    description:
+      "Panel de administracion para centralizar la gestion de todas las aplicaciones de Knews, con accesos, metricas y control operativo desde un mismo lugar.",
+    image: "/ecosistema.png",
+    technologies: ["Next.js", "TypeScript", "Dashboard", "APIs"],
+    features: [
+      {
+        title: "Administracion centralizada",
+        description:
+          "Reune las aplicaciones de Knews en un unico panel para acceder, revisar y gestionar cada producto sin cambiar de entorno.",
+      },
+      {
+        title: "Vista del ecosistema",
+        description:
+          "Muestra el estado general de las plataformas, accesos principales y datos clave para entender rapidamente que ocurre en cada app.",
+      },
+      {
+        title: "Gestion de contenidos",
+        description:
+          "Permite administrar publicaciones, recursos y configuraciones asociadas a las aplicaciones conectadas.",
+      },
+      {
+        title: "Control operativo",
+        description:
+          "Esta pensado para facilitar tareas internas, seguimiento de actividad y organizacion del trabajo diario dentro del ecosistema Knews.",
+      },
+    ],
+    details: {
+      frontend: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      backend: ["API routes", "Servicios internos", "Gestion de datos"],
+      objective:
+        "Construir un panel administrativo que funcione como centro de control para todas las aplicaciones de Knews, ordenando accesos, datos y tareas operativas en una experiencia clara y eficiente.",
+    },
+  },
+  {
     slug: "pinkterest",
     title: "PINKTEREST",
     description:

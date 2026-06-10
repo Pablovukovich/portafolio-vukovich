@@ -17,7 +17,7 @@ export const Proyectos = () => {
         funcionalidades y una misma visión.
       </div>
 
-      <section className="grid gap-5 md:grid-cols-2 lg:auto-rows-[17rem]">
+      <section className="mb-14 grid gap-8 md:grid-cols-2 lg:auto-rows-[17rem]">
         {projects.map((project, index) => (
           <motion.div
             key={project.title}
